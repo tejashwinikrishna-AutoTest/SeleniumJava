@@ -19,7 +19,8 @@ public class TestWebDriverManager {
     	WebDriver driver=new ChromeDriver();
     	driver.manage().window().maximize();
     	driver.manage().timeouts().implicitlyWait(30,TimeUnit.SECONDS);
-    	driver.get("https://paytm.com/");
+    	driver.get("https://paytm.com/");   	
+    	System.out.println("first change");
 		
 	}
 
