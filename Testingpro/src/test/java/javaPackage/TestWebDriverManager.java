@@ -1,0 +1,26 @@
+package javaPackage;
+
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.Test;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+public class TestWebDriverManager {
+	
+    @Test
+    //ctrl+a ctrl+shft+o
+    //Test Next Generation 
+	public void a() {
+    	//to update the chrome driver manager
+    	WebDriverManager.chromedriver().setup();
+    	WebDriver driver=new ChromeDriver();
+    	driver.manage().window().maximize();
+    	driver.manage().timeouts().implicitlyWait(30,TimeUnit.SECONDS);
+    	driver.get("https://paytm.com/");
+		
+	}
+
+}
